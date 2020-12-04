@@ -1,0 +1,115 @@
+{
+  "name": "nextjs-boilerplate",
+  "version": "1.0.0",
+  "description": "NextJs boilerplate",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriscarex/nextjs-boilerplate"
+  },
+  "scripts": {
+    "test": "jest --no-cache",
+    "test:coverage": "npm run test -- --coverage",
+    "test:watch": "npm run test -- --watch",
+    "test:update-snapshots": "npm run test -- --updateSnapshot",
+    "lint": "eslint --ext .js src/components/ src/pages/ src/constants/ src/__test__/ .*.js",
+    "lint:watch": "npm run lint -- --watch",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:style": "npm run stylelint src/styles/*.scss",
+    "lint:commitmsg:ci": "echo $CI_COMMIT_MESSAGE | npm run commitlint",
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "audit": "npm audit"
+  },
+  "author": "@chriscarex",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-throw-expressions": "^7.10.4",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "@commitlint/cli": "^9.1.2",
+    "@testing-library/dom": "^7.22.1",
+    "@testing-library/jest-dom": "^5.11.1",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
+    "browserslist": "^4.14.5",
+    "browserstack-local": "^1.4.5",
+    "commitlint-config-jira": "^1.4.1",
+    "commitlint-plugin-jira-rules": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-to-json": "^3.5.0",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-formatter-gitlab": "^2.0.0",
+    "eslint-plugin-html": "^6.0.3",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^4.2.5",
+    "jest": "^26.3.0",
+    "jest-junit": "^11.1.0",
+    "jsdom": "^16.4.0",
+    "serverless": "^2.0.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.44.1",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "browserslist": {
+    "dev": [
+      "last 1 Chrome version",
+      "Explorer 11"
+    ],
+    "test": [
+      "last 1 Chrome version",
+      "Explorer 11"
+    ],
+    "production": [
+      "last 1 Chrome version",
+      "Explorer 11",
+      "last 1 iOS version",
+      "last 1 Edge version"
+    ],
+    "longtail": [
+      "last 1 Chrome version",
+      "Explorer 11",
+      "last 1 iOS version",
+      "last 1 Edge version",
+      "last 1 Samsung version",
+      "last 1 Android version",
+      "last 1 Firefox version",
+      "last 1 Baidu version"
+    ]
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^10.0.3",
+    "@sls-next/serverless-component": "^1.18.0",
+    "axios": "^0.20.0",
+    "next": "^10.0.3",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-transition-group": "^4.4.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1"
+  },
+  "jest-junit": {
+    "outputDirectory": "test/test_reports",
+    "outputName": "jest-junit.xml"
+  }
+}

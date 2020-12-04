@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_document should match snapshot  1`] = `
+<Html
+  lang="en"
+>
+  <Head>
+    <meta
+      content="IE=Edge"
+      httpEquiv="x-ua-compatible"
+    />
+    <meta
+      content="block-all-mixed-content;default-src 'none';connect-src 'self';font-src fonts.googleapis.com;form-action 'self';img-src 'self' data:;manifest-src 'self';prefetch-src 'self';script-src 'self';style-src 'self';"
+      httpEquiv="Content-Security-Policy"
+    />
+    <meta
+      content="nosniff"
+      httpEquiv="X-Content-Type-Options"
+    />
+    <meta
+      content="max-age=31536000"
+      httpEquiv="Strict-Transport-Security"
+    />
+    <meta
+      content="strict-origin-when-cross-origin"
+      httpEquiv="Referrer-Policy"
+    />
+    <meta
+      lang="en"
+    />
+    <link
+      href="/img/bee.svg"
+      rel="shortcut icon"
+    />
+  </Head>
+  <body>
+    <Main />
+    <NextScript />
+  </body>
+</Html>
+`;

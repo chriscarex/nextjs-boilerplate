@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`503 page should match snapshot 1`] = `
+<Fragment>
+  <HeadTags
+    description="error 503"
+    title="Error 503"
+  />
+  <ErrorPage
+    statusCode={503}
+  />
+</Fragment>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_app should match snapshot  1`] = `
+<Fragment>
+  <HeaderComponent />
+  <NextPage
+    success={false}
+  />
+  <FooterComponent />
+</Fragment>
+`;
+
+exports[`_app should match snapshot if error occurs 1`] = `
+<Fragment>
+  <HeaderComponent />
+  <ErrorPage
+    statusCode={400}
+  />
+  <FooterComponent />
+</Fragment>
+`;
